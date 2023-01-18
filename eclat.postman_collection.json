@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "84d886e5-6d30-49e6-860b-87c08fb7e927",
+		"name": "eclat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14176220"
+	},
+	"item": [
+		{
+			"name": "check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1//alluser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"",
+						"alluser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUser Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1//alluser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"",
+						"alluser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get data by entity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload entity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/1.JPG"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1/upload/shubham1/?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"upload",
+						"shubham1",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/c.jpg"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1/register/vikrant/v@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"register",
+						"vikrant",
+						"v@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/1.JPG"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1/associate/shubham1/1.JPG?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"associate",
+						"shubham1",
+						"1.JPG"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/13.PNG"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1/update/shubham1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"update",
+						"shubham1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete entity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/13.PNG"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/myloft/v1/delete/shubham1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"myloft",
+						"v1",
+						"delete",
+						"shubham1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
